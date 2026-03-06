@@ -28,26 +28,26 @@ img{
     max-width:100%;
 }
 
-/* Hero Section */
+/* Home Section */
 
-#hero{
+#home{
     background:#f1f6ff;
     padding:80px 0;
 }
 
-.hero-heading{
+.home-heading{
     font-size:50px;
     font-weight:bold;
     color:#002970;
     margin-bottom:20px;
 }
 
-.hero-para{
+.home-para{
     font-size:18px;
     margin-bottom:25px;
 }
 
-.hero-img{
+.home-img{
     border-radius:15px;
     width:90%;
 }
