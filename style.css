@@ -1,0 +1,196 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+
+.navbar{
+    padding:12px;
+}
+
+.navbar-brand{
+    font-weight:bold;
+    font-size:24px;
+}
+
+.nav-link{
+    font-weight:500;
+}
+
+.nav-link:hover{
+    text-decoration:underline;
+}
+
+/* Images */
+
+img{
+    border-radius:6px;
+    max-width:100%;
+}
+
+/* Hero Section */
+
+#hero{
+    background:#f1f6ff;
+    padding:80px 0;
+}
+
+.hero-heading{
+    font-size:50px;
+    font-weight:bold;
+    color:#002970;
+    margin-bottom:20px;
+}
+
+.hero-para{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.hero-img{
+    border-radius:15px;
+    width:90%;
+}
+
+/* Categories */
+
+#categories{
+    padding:70px 0;
+    background:white;
+}
+
+.pet-card{
+    padding:30px;
+    border:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.pet-card img{
+    width:80px;
+    margin-bottom:15px;
+}
+
+.pet-card:hover{
+    transform:scale(1.05);
+}
+
+/* Products */
+
+#products{
+    padding:70px 0;
+    background:#f8f9fa;
+}
+
+.product-card{
+    border:none;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+    margin-bottom:20px;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-card img{
+    height:200px;
+    object-fit:contain;
+    padding:15px;
+}
+
+.price{
+    font-size:18px;
+    font-weight:bold;
+    color:#ff6b00;
+}
+
+/* Offers */
+
+#offers{
+    padding:70px 0;
+    background:white;
+}
+
+.offer-box{
+    padding:40px;
+    border-radius:10px;
+    background:#f1f6ff;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.offer-box:hover{
+    transform:scale(1.05);
+}
+
+.offer-box h4{
+    color:#002970;
+    margin-bottom:15px;
+}
+
+/* Reviews */
+
+#reviews{
+    padding:70px 0;
+    background:#f8f9fa;
+}
+
+.review-card{
+    border:none;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    border-radius:10px;
+}
+
+.stars{
+    color:orange;
+}
+
+/* Features */
+
+#features{
+    padding:70px 0;
+    background:white;
+}
+
+.feature-box{
+    padding:30px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.feature-box:hover{
+    background:#f1f6ff;
+    transform:translateY(-5px);
+}
+
+.feature-box i{
+    color:#002970;
+}
+
+/* Contact */
+
+#contact{
+    padding:70px 0;
+    background:#f8f9fa;
+}
+
+/* Footer */
+
+#footer{
+    background:#002970;
+    color:white;
+    padding:40px 0;
+    text-align:center;
+}
+
+#footer i{
+    margin:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#footer i:hover{
+    color:#ffc107;
+}
