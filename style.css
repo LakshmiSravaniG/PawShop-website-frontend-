@@ -1,4 +1,9 @@
+/* Reset */
+
 *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,6 +26,17 @@
     text-decoration:underline;
 }
 
+/* Sections */
+
+section{
+    padding:80px 0;
+}
+
+section h2{
+    font-weight:700;
+    margin-bottom:50px;
+}
+
 /* Images */
 
 img{
@@ -32,7 +48,7 @@ img{
 
 #home{
     background:#f1f6ff;
-    padding:80px 0;
+    padding:20px;
 }
 
 .home-heading{
@@ -52,6 +68,12 @@ img{
     width:90%;
 }
 
+.carousel-caption{
+    background:rgba(0,0,0,0.45);
+    padding:20px;
+    border-radius:10px;
+}
+
 /* Categories */
 
 #categories{
@@ -59,7 +81,7 @@ img{
     background:white;
 }
 
-.pet-card{
+.category-card{
     padding:30px;
     border:none;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
@@ -67,12 +89,13 @@ img{
     cursor:pointer;
 }
 
-.pet-card img{
-    width:80px;
-    margin-bottom:15px;
+.category-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
 }
 
-.pet-card:hover{
+.category-card:hover{
     transform:scale(1.05);
 }
 
@@ -92,6 +115,7 @@ img{
 
 .product-card:hover{
     transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 .product-card img{
@@ -106,6 +130,10 @@ img{
     color:#ff6b00;
 }
 
+.stars{
+    color:#ffc107;
+}
+
 /* Offers */
 
 #offers{
@@ -113,21 +141,39 @@ img{
     background:white;
 }
 
-.offer-box{
-    padding:40px;
+.offer-card{
+    border:none;
     border-radius:10px;
-    background:#f1f6ff;
     box-shadow:0 4px 12px rgba(0,0,0,0.1);
     transition:0.3s;
 }
 
-.offer-box:hover{
+.offer-card:hover{
     transform:scale(1.05);
 }
 
-.offer-box h4{
+.offer-card h5{
     color:#002970;
     margin-bottom:15px;
+}
+
+.offer-img{
+    height:200px;
+    object-fit:cover;
+}
+
+/* Discount Badge */
+
+.discount{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:#ff3b3b;
+    color:white;
+    padding:5px 10px;
+    font-size:12px;
+    font-weight:bold;
+    border-radius:5px;
 }
 
 /* Reviews */
@@ -141,10 +187,8 @@ img{
     border:none;
     box-shadow:0 4px 12px rgba(0,0,0,0.1);
     border-radius:10px;
-}
-
-.stars{
-    color:orange;
+    height:100%;
+    padding:25px;
 }
 
 /* Features */
@@ -158,6 +202,9 @@ img{
     padding:30px;
     border-radius:10px;
     transition:0.3s;
+    height:100%;
+    background:white;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
 .feature-box:hover{
@@ -171,9 +218,11 @@ img{
 
 /* Contact */
 
-#contact{
-    padding:70px 0;
-    background:#f8f9fa;
+#contact form{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* Footer */
@@ -181,7 +230,7 @@ img{
 #footer{
     background:#002970;
     color:white;
-    padding:40px 0;
+    padding:50px 0;
     text-align:center;
 }
 

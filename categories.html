@@ -2,53 +2,195 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories</title>
+
+    <title>PawShop Categories</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <!-- Pet Categories -->
 
-    <section id="categories">
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
 
         <div class="container">
 
-            <h2 class="text-center mb-5">
+            <a class="navbar-brand text-white fw-bold" href="#">
+                🐾 PawShop
+            </a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./categories.html">Categories</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./products.html">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./deals.html">Deals</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Search -->
+
+                <form class="d-flex me-3">
+
+                    <input class="form-control me-2" type="search" placeholder="Search food, toys, treats">
+
+                    <button class="btn btn-warning fw-bold">
+                        Search
+                    </button>
+
+                </form>
+
+                <!-- Country -->
+
+                <div class="d-flex align-items-center me-3 text-white">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/960px-Flag_of_India.svg.png"
+                        width="25" class="me-2">
+
+                    <span>India</span>
+
+                </div>
+
+                <!-- Login + Cart -->
+
+                <button class="btn btn-light me-2">
+                    Login
+                </button>
+
+                <button class="btn btn-warning">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Categories Section -->
+
+    <section id="categories" class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5 fw-bold">
                 Shop by Pet
             </h2>
 
-            <div class="row text-center">
+            <div class="row g-4">
 
-                <div class="col-md-3">
-                    <div class="card pet-card">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN2z0ERwXQUqH29urPuzWueLXKhJAY6SMyAA&s">
-                        <h5>Dog</h5>
+                <!-- Dog -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card category-card text-center h-100">
+
+                        <img src="https://i.pinimg.com/236x/5d/65/ab/5d65ab3d364e83e2c472d474c2528016.jpg"
+                            class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5>Dog Supplies</h5>
+                            <p class="text-muted">Food, toys & accessories</p>
+
+                        </div>
+
                     </div>
+
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card pet-card">
-                        <img src="https://www.rd.com/wp-content/uploads/2019/11/cat-10-e1573844975155-scaled.jpg">
-                        <h5>Cat</h5>
+
+                <!-- Cat -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card category-card text-center h-100">
+
+                        <img src="https://w0.peakpx.com/wallpaper/323/580/HD-wallpaper-cat-red-cat-ginger-cats.jpg"
+                            class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5>Cat Supplies</h5>
+                            <p class="text-muted">Healthy food & toys</p>
+
+                        </div>
+
                     </div>
+
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card pet-card">
-                        <img src="https://www.mxwholesale.co.uk/cdn/shop/files/5060226031825_1080x.jpg?v=1691129302">
-                        <h5>Pet Toys</h5>
+
+                <!-- Toys -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card category-card text-center h-100">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMKL_f3dVIeDZGrBXtbdTM2112Me2nJSFwGA&s"
+                            class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5>Pet Toys</h5>
+                            <p class="text-muted">Fun toys for pets</p>
+
+                        </div>
+
                     </div>
+
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card pet-card">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdMZbUmATQe32DHwU-sRknWQ-Ivyw4IcEkGQ&s">
-                        <h5>Pet Food</h5>
+
+                <!-- Food -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card category-card text-center h-100">
+
+                        <img src="https://www.shutterstock.com/image-photo/dry-dog-food-bowl-on-260nw-764292286.jpg"
+                            class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5>Pet Food</h5>
+                            <p class="text-muted">Healthy & tasty meals</p>
+
+                        </div>
+
                     </div>
+
                 </div>
 
             </div>
@@ -56,6 +198,64 @@
         </div>
 
     </section>
+
+
+    <!-- Footer -->
+
+    <footer id="footer">
+
+        <div class="container">
+
+            <div class="row text-center">
+
+                <!-- Column 1 -->
+
+                <div class="col-md-3">
+                    <h5>PawShop</h5>
+                    <p>Your one stop shop for pet food, toys and accessories.</p>
+                </div>
+
+                <!-- Column 2 -->
+
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <a href="#home" class="text-white d-block">Home</a>
+                    <a href="./products.html" class="text-white d-block">Products</a>
+                    <a href="./deals.html" class="text-white d-block">Offers</a>
+                </div>
+
+                <!-- Column 3 -->
+
+                <div class="col-md-3">
+                    <h5>Support</h5>
+                    <p>Help Center</p>
+                    <p>Shipping</p>
+                    <p>Returns</p>
+                </div>
+
+                <!-- Column 4 -->
+
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+
+                    <i class="fa-brands fa-facebook fa-lg"></i>
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                    <i class="fa-brands fa-twitter fa-lg"></i>
+                    <i class="fa-brands fa-linkedin fa-lg"></i>
+                    <i class="fa-brands fa-github fa-lg"></i>
+                    <i class="fa-brands fa-vercel fa-lg"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

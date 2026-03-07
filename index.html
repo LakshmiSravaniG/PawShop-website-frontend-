@@ -18,7 +18,7 @@
 <body>
     <!-- PawShop Navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
 
         <div class="container">
 
@@ -37,16 +37,13 @@
                 <ul class="navbar-nav me-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#home">Home</a>
+                        <a class="nav-link text-white active" href="#home">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./categories.html">Dog</a>
+                        <a class="nav-link text-white" href="./categories.html">Categories</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./categories.html">Cat</a>
-                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link text-white" href="./products.html">Product</a>
@@ -56,6 +53,9 @@
                         <a class="nav-link text-white" href="./deals.html">Deals</a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
                 </ul>
 
                 <!-- Search Bar -->
@@ -63,7 +63,7 @@
 
                     <input class="form-control me-2" type="search" placeholder="Search food, toys, treats">
 
-                    <button class="btn btn-warning">
+                    <button class="btn btn-warning fw-bold">
                         Search
                     </button>
 
@@ -95,41 +95,82 @@
         </div>
 
     </nav>
-    <!-- Home Section -->
+
+    <!-- Home Section with Carousel -->
+
     <section id="home">
 
-        <div class="container">
+        <div id="petCarousel" class="carousel slide" data-bs-ride="carousel">
 
-            <div class="row align-items-center">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="2"></button>
+            </div>
 
-                <!-- Left Text -->
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
 
-                <div class="col-md-6">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
 
-                    <h1 class="home-heading">
-                        Everything Your Pet Needs
-                    </h1>
+                    <img src="https://img.freepik.com/free-vector/frame-with-dogs-vector-white-background_53876-127700.jpg?semt=ais_hybrid&w=740&q=80"
+                        class="d-block w-100" style="height:500px; object-fit:cover;">
 
-                    <p class="home-para">
-                        Food, toys, treats and healthcare for your furry friends.
-                    </p>
+                    <div class="carousel-caption">
 
-                    <button class="btn btn-primary btn-lg">
-                        Shop Now
-                    </button>
+                        <h1>Everything Your Pet Needs</h1>
+                        <p>Food, toys, treats and healthcare for your furry friends.</p>
+                        <button class="btn btn-warning btn-lg">Shop Now</button>
+
+                    </div>
 
                 </div>
 
-                <!-- Right Image -->
+                <!-- Slide 2 -->
+                <div class="carousel-item">
 
-                <!-- <div class="col-md-6 text-center">
+                    <img src="https://assets3.thrillist.com/v1/image/3055225/792x416/scale;webp=auto;jpeg_quality=60.jpg"
+                        class="d-block w-100" style="height:500px; object-fit:cover;">
 
-                    <img src="https://www.dogseechew.in/storage/editor_648b14d0a0dc8-pet-care-on-a-budget-an-expert-guide.jpg"
-                        class="img-fluid hero-img">
+                    <div class="carousel-caption">
 
-                </div> -->
+                        <h1>Best Food for Dogs & Cats</h1>
+                        <p>Healthy and tasty meals for your pets.</p>
+                        <button class="btn btn-warning btn-lg">Explore Food</button>
+
+                    </div>
+
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+
+                    <img src="https://www.shutterstock.com/image-photo/flat-lay-composition-different-pet-600nw-2376262345.jpg"
+                        class="d-block w-100" style="height:500px; object-fit:cover;">
+
+                    <div class="carousel-caption">
+
+                        <h1>Toys & Accessories</h1>
+                        <p>Fun toys and premium accessories for happy pets.</p>
+                        <button class="btn btn-warning btn-lg">Shop Toys</button>
+
+                    </div>
+
+                </div>
 
             </div>
+
+            <!-- Previous Button -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#petCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <!-- Next Button -->
+            <button class="carousel-control-next" type="button" data-bs-target="#petCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
 
         </div>
 
@@ -144,7 +185,7 @@
 
             <h2 class="text-center mb-5">Customer Reviews</h2>
 
-            <div class="row">
+            <div class="row g-4">
 
                 <!-- Review 1 -->
 
@@ -232,7 +273,7 @@
 
             <h2 class="text-center mb-5">Why Choose PawShop</h2>
 
-            <div class="row text-center">
+            <div class="row text-center g-4">
 
                 <!-- Feature 1 -->
 
@@ -304,7 +345,7 @@
 
             <h2 class="text-center mb-5">Contact Us</h2>
 
-            <div class="row">
+            <div class="row g-4">
 
                 <!-- Contact Form -->
 
@@ -369,12 +410,12 @@
 
                         <div class="mb-3">
                             <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Enter email">
+                            <input type="email" class="form-control" placeholder="Enter email" required>
                         </div>
 
                         <div class="mb-3">
                             <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Enter password">
+                            <input type="password" class="form-control" placeholder="Enter password" required>
                         </div>
 
                         <button class="btn btn-primary w-100">
@@ -414,17 +455,17 @@
 
                         <div class="mb-3">
                             <label>Name</label>
-                            <input type="text" class="form-control" placeholder="Enter name">
+                            <input type="text" class="form-control" placeholder="Enter name" required>
                         </div>
 
                         <div class="mb-3">
                             <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Enter email">
+                            <input type="email" class="form-control" placeholder="Enter email" required>
                         </div>
 
                         <div class="mb-3">
                             <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Create password">
+                            <input type="password" class="form-control" placeholder="Create password" required>
                         </div>
 
                         <button class="btn btn-success w-100">
@@ -465,9 +506,9 @@
 
                 <div class="col-md-3">
                     <h5>Quick Links</h5>
-                    <p>Home</p>
-                    <p>Products</p>
-                    <p>Offers</p>
+                    <a href="#home" class="text-white d-block">Home</a>
+                    <a href="./products.html" class="text-white d-block">Products</a>
+                    <a href="./deals.html" class="text-white d-block">Offers</a>
                 </div>
 
                 <!-- Column 3 -->
@@ -487,6 +528,12 @@
                     <i class="fa-brands fa-facebook fa-lg"></i>
                     <i class="fa-brands fa-instagram fa-lg"></i>
                     <i class="fa-brands fa-twitter fa-lg"></i>
+                    <i class="fa-brands fa-linkedin fa-lg"></i>
+                    <i class="fa-brands fa-github fa-lg"></i>
+                    <i class="fa-brands fa-vercel fa-lg"></i>
+
+
+
 
                 </div>
 
