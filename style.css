@@ -7,6 +7,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Navbar */
 
 .navbar{
@@ -23,7 +27,7 @@
 }
 
 .nav-link:hover{
-    text-decoration:underline;
+    text-decoration:none;
 }
 
 /* Sections */
@@ -242,4 +246,63 @@ img{
 
 #footer i:hover{
     color:#ffc107;
+}
+/* Product Pages (Dog, Cat, Toys, Food) */
+
+.card{
+    border:none;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+    height:100%;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Product Images */
+
+.card-img-top{
+    height:220px;
+    object-fit:cover;
+    padding:10px;
+}
+
+/* Product Title */
+
+.card-body h5{
+    font-size:16px;
+    font-weight:600;
+    min-height:45px;
+}
+
+/* Price */
+
+.card-body p{
+    font-size:18px;
+    font-weight:bold;
+    color:#ff6b00;
+}
+
+/* Buy Button */
+
+.btn-primary{
+    background:#002970;
+    border:none;
+    border-radius:20px;
+    padding:6px 16px;
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    background:#ff9800;
+}
+
+/* Page Background */
+
+body{
+    background:#f5f7fb;
 }
